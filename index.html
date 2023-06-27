@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="a">
+      <label for="amount">Ampount to investment :- </label>
+      <input type="number" name="amount" id="amount" class="namei" />
+      <br />
+      <br />
+
+      <select
+        name="bankname"
+        id="allbank"
+        class="namei"
+        onchange="selectfunction(this)"
+      >
+        <option value="selectbank" disabled>select bank</option>
+        <option value="9.10" id="bank1">Suryoday Small Finance Bank</option>
+        <option value="9.00" id="bank2">Unity Small Finance Bank</option>
+        <option value="8.50" id="bank3">Equitas Small Finance Bank</option>
+        <option value="8.50" id="bank4">ESAF Small Finance Bank</option>
+      </select>
+      <br /><br />
+      <select name="rate" id="rateofbank">
+        <option value="" id="intrestrate">rate if intrest</option>
+      </select>
+      <br /><br />
+      <select name="year" id="yearinves" class="namei">
+        <option value="">month to investment</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="4">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <br /><br />
+
+      <input
+        type="submit"
+        value="getiresult"
+        id="sumitclick"
+        onclick="clickinp()"
+      />
+
+      <br /><br />
+      <input type="text" name="display" id="display" />
+    </div>
+    <script src="../task/index.js"></script>
+  </body>
+</html>
